@@ -1,0 +1,444 @@
+25/04/02 21:36:37 INFO SparkContext: Running Spark version 3.5.4
+25/04/02 21:36:37 INFO SparkContext: OS info Linux, 4.18.0-553.34.1.el8_10.x86_64, amd64
+25/04/02 21:36:37 INFO SparkContext: Java version 17.0.6
+25/04/02 21:36:37 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/04/02 21:36:37 INFO ResourceUtils: ==============================================================
+25/04/02 21:36:37 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/04/02 21:36:37 INFO ResourceUtils: ==============================================================
+25/04/02 21:36:37 INFO SparkContext: Submitted application: Problem 3 - Titanic Analysis
+25/04/02 21:36:37 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/04/02 21:36:37 INFO ResourceProfile: Limiting resource is cpu
+25/04/02 21:36:37 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/04/02 21:36:37 INFO SecurityManager: Changing view acls to: fdollaku
+25/04/02 21:36:37 INFO SecurityManager: Changing modify acls to: fdollaku
+25/04/02 21:36:37 INFO SecurityManager: Changing view acls groups to: 
+25/04/02 21:36:37 INFO SecurityManager: Changing modify acls groups to: 
+25/04/02 21:36:37 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: fdollaku; groups with view permissions: EMPTY; users with modify permissions: fdollaku; groups with modify permissions: EMPTY
+25/04/02 21:36:37 INFO Utils: Successfully started service 'sparkDriver' on port 36937.
+25/04/02 21:36:37 INFO SparkEnv: Registering MapOutputTracker
+25/04/02 21:36:37 INFO SparkEnv: Registering BlockManagerMaster
+25/04/02 21:36:37 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/04/02 21:36:37 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/04/02 21:36:37 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/04/02 21:36:37 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-92f49b28-3c6b-4bcb-a392-ab3219cda440
+25/04/02 21:36:37 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+25/04/02 21:36:37 INFO SparkEnv: Registering OutputCommitCoordinator
+25/04/02 21:36:37 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+25/04/02 21:36:38 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+25/04/02 21:36:38 INFO Executor: Starting executor ID driver on host aion-177.aion-cluster.uni.lux
+25/04/02 21:36:38 INFO Executor: OS info Linux, 4.18.0-553.34.1.el8_10.x86_64, amd64
+25/04/02 21:36:38 INFO Executor: Java version 17.0.6
+25/04/02 21:36:38 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/04/02 21:36:38 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@24bcbdec for default.
+25/04/02 21:36:38 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45421.
+25/04/02 21:36:38 INFO NettyBlockTransferService: Server created on aion-177.aion-cluster.uni.lux:45421
+25/04/02 21:36:38 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/04/02 21:36:38 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, aion-177.aion-cluster.uni.lux, 45421, None)
+25/04/02 21:36:38 INFO BlockManagerMasterEndpoint: Registering block manager aion-177.aion-cluster.uni.lux:45421 with 434.4 MiB RAM, BlockManagerId(driver, aion-177.aion-cluster.uni.lux, 45421, None)
+25/04/02 21:36:38 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, aion-177.aion-cluster.uni.lux, 45421, None)
+25/04/02 21:36:38 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, aion-177.aion-cluster.uni.lux, 45421, None)
+25/04/02 21:36:38 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+25/04/02 21:36:38 INFO SharedState: Warehouse path is 'file:/mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/spark-warehouse'.
+25/04/02 21:36:38 INFO InMemoryFileIndex: It took 25 ms to list leaf files for 1 paths.
+25/04/02 21:36:38 INFO InMemoryFileIndex: It took 1 ms to list leaf files for 1 paths.
+25/04/02 21:36:40 INFO FileSourceStrategy: Pushed Filters: 
+25/04/02 21:36:40 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#0, None)) > 0)
+25/04/02 21:36:40 INFO CodeGenerator: Code generated in 125.942699 ms
+25/04/02 21:36:40 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.6 KiB, free 434.2 MiB)
+25/04/02 21:36:40 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 434.2 MiB)
+25/04/02 21:36:40 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 34.4 KiB, free: 434.4 MiB)
+25/04/02 21:36:40 INFO SparkContext: Created broadcast 0 from csv at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:40 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+25/04/02 21:36:40 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:40 INFO DAGScheduler: Got job 0 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/04/02 21:36:40 INFO DAGScheduler: Final stage: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0)
+25/04/02 21:36:40 INFO DAGScheduler: Parents of final stage: List()
+25/04/02 21:36:40 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:40 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/04/02 21:36:40 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 13.5 KiB, free 434.2 MiB)
+25/04/02 21:36:40 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.4 KiB, free 434.2 MiB)
+25/04/02 21:36:40 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 6.4 KiB, free: 434.4 MiB)
+25/04/02 21:36:40 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:40 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:40 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+25/04/02 21:36:40 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, PROCESS_LOCAL, 9620 bytes) 
+25/04/02 21:36:41 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+25/04/02 21:36:41 INFO CodeGenerator: Code generated in 10.39342 ms
+25/04/02 21:36:41 INFO FileScanRDD: Reading File path: file:///home/users/fdollaku/Big_Data_Analytics/titanic.csv, range: 0-60302, partition values: [empty row]
+25/04/02 21:36:41 INFO CodeGenerator: Code generated in 8.655115 ms
+25/04/02 21:36:41 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1735 bytes result sent to driver
+25/04/02 21:36:41 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 151 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:41 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+25/04/02 21:36:41 INFO DAGScheduler: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0) finished in 0.236 s
+25/04/02 21:36:41 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+25/04/02 21:36:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+25/04/02 21:36:41 INFO DAGScheduler: Job 0 finished: csv at NativeMethodAccessorImpl.java:0, took 0.262472 s
+25/04/02 21:36:41 INFO CodeGenerator: Code generated in 7.07234 ms
+25/04/02 21:36:41 INFO BlockManagerInfo: Removed broadcast_1_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 6.4 KiB, free: 434.4 MiB)
+25/04/02 21:36:41 INFO FileSourceStrategy: Pushed Filters: 
+25/04/02 21:36:41 INFO FileSourceStrategy: Post-Scan Filters: 
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.6 KiB, free 434.0 MiB)
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 433.9 MiB)
+25/04/02 21:36:41 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 34.4 KiB, free: 434.3 MiB)
+25/04/02 21:36:41 INFO SparkContext: Created broadcast 2 from csv at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:41 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+25/04/02 21:36:41 INFO BlockManagerInfo: Removed broadcast_0_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 34.4 KiB, free: 434.4 MiB)
+25/04/02 21:36:41 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:41 INFO DAGScheduler: Got job 1 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/04/02 21:36:41 INFO DAGScheduler: Final stage: ResultStage 1 (csv at NativeMethodAccessorImpl.java:0)
+25/04/02 21:36:41 INFO DAGScheduler: Parents of final stage: List()
+25/04/02 21:36:41 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:41 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[9] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 27.8 KiB, free 434.1 MiB)
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 12.8 KiB, free 434.1 MiB)
+25/04/02 21:36:41 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 12.8 KiB, free: 434.4 MiB)
+25/04/02 21:36:41 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:41 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[9] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:41 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+25/04/02 21:36:41 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, PROCESS_LOCAL, 9620 bytes) 
+25/04/02 21:36:41 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+25/04/02 21:36:41 INFO CodeGenerator: Code generated in 6.240277 ms
+25/04/02 21:36:41 INFO FileScanRDD: Reading File path: file:///home/users/fdollaku/Big_Data_Analytics/titanic.csv, range: 0-60302, partition values: [empty row]
+25/04/02 21:36:41 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1757 bytes result sent to driver
+25/04/02 21:36:41 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 114 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:41 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+25/04/02 21:36:41 INFO DAGScheduler: ResultStage 1 (csv at NativeMethodAccessorImpl.java:0) finished in 0.143 s
+25/04/02 21:36:41 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+25/04/02 21:36:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+25/04/02 21:36:41 INFO DAGScheduler: Job 1 finished: csv at NativeMethodAccessorImpl.java:0, took 0.147176 s
+25/04/02 21:36:41 INFO FileSourceStrategy: Pushed Filters: 
+25/04/02 21:36:41 INFO FileSourceStrategy: Post-Scan Filters: 
+25/04/02 21:36:41 INFO CodeGenerator: Code generated in 7.681682 ms
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 199.5 KiB, free 433.9 MiB)
+25/04/02 21:36:41 INFO BlockManagerInfo: Removed broadcast_3_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 12.8 KiB, free: 434.4 MiB)
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 433.9 MiB)
+25/04/02 21:36:41 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 34.4 KiB, free: 434.3 MiB)
+25/04/02 21:36:41 INFO SparkContext: Created broadcast 4 from approxQuantile at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:41 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+25/04/02 21:36:41 INFO SparkContext: Starting job: approxQuantile at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:41 INFO DAGScheduler: Got job 2 (approxQuantile at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/04/02 21:36:41 INFO DAGScheduler: Final stage: ResultStage 2 (approxQuantile at NativeMethodAccessorImpl.java:0)
+25/04/02 21:36:41 INFO DAGScheduler: Parents of final stage: List()
+25/04/02 21:36:41 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:41 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[16] at approxQuantile at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 31.6 KiB, free 433.9 MiB)
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 14.5 KiB, free 433.9 MiB)
+25/04/02 21:36:41 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 14.5 KiB, free: 434.3 MiB)
+25/04/02 21:36:41 INFO BlockManagerInfo: Removed broadcast_2_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 34.4 KiB, free: 434.4 MiB)
+25/04/02 21:36:41 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:41 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[16] at approxQuantile at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:41 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+25/04/02 21:36:41 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, PROCESS_LOCAL, 9620 bytes) 
+25/04/02 21:36:41 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+25/04/02 21:36:41 INFO CodeGenerator: Code generated in 7.796952 ms
+25/04/02 21:36:41 INFO CodeGenerator: Code generated in 8.328174 ms
+25/04/02 21:36:41 INFO FileScanRDD: Reading File path: file:///home/users/fdollaku/Big_Data_Analytics/titanic.csv, range: 0-60302, partition values: [empty row]
+25/04/02 21:36:41 INFO CodeGenerator: Code generated in 6.639149 ms
+25/04/02 21:36:41 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 8234 bytes result sent to driver
+25/04/02 21:36:41 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 106 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:41 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+25/04/02 21:36:41 INFO DAGScheduler: ResultStage 2 (approxQuantile at NativeMethodAccessorImpl.java:0) finished in 0.132 s
+25/04/02 21:36:41 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+25/04/02 21:36:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+25/04/02 21:36:41 INFO DAGScheduler: Job 2 finished: approxQuantile at NativeMethodAccessorImpl.java:0, took 0.136013 s
+25/04/02 21:36:41 INFO FileSourceStrategy: Pushed Filters: IsNotNull(Age),GreaterThan(Age,24.0)
+25/04/02 21:36:41 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(Age#22),(Age#22 > 24.0)
+25/04/02 21:36:41 INFO CodeGenerator: Code generated in 11.202672 ms
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 199.5 KiB, free 433.9 MiB)
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 433.9 MiB)
+25/04/02 21:36:41 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 34.4 KiB, free: 434.3 MiB)
+25/04/02 21:36:41 INFO SparkContext: Created broadcast 6 from count at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:41 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+25/04/02 21:36:41 INFO DAGScheduler: Registering RDD 20 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 0
+25/04/02 21:36:41 INFO DAGScheduler: Got map stage job 3 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/04/02 21:36:41 INFO DAGScheduler: Final stage: ShuffleMapStage 3 (count at NativeMethodAccessorImpl.java:0)
+25/04/02 21:36:41 INFO DAGScheduler: Parents of final stage: List()
+25/04/02 21:36:41 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:41 INFO DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[20] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 19.1 KiB, free 433.9 MiB)
+25/04/02 21:36:41 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 9.3 KiB, free 433.9 MiB)
+25/04/02 21:36:41 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 9.3 KiB, free: 434.3 MiB)
+25/04/02 21:36:41 INFO BlockManagerInfo: Removed broadcast_5_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 14.5 KiB, free: 434.3 MiB)
+25/04/02 21:36:41 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:41 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[20] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:41 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks resource profile 0
+25/04/02 21:36:41 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, PROCESS_LOCAL, 9609 bytes) 
+25/04/02 21:36:41 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+25/04/02 21:36:41 INFO BlockManagerInfo: Removed broadcast_4_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 34.4 KiB, free: 434.4 MiB)
+25/04/02 21:36:41 INFO CodeGenerator: Code generated in 10.50319 ms
+25/04/02 21:36:41 INFO FileScanRDD: Reading File path: file:///home/users/fdollaku/Big_Data_Analytics/titanic.csv, range: 0-60302, partition values: [empty row]
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 6.090487 ms
+25/04/02 21:36:42 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 2044 bytes result sent to driver
+25/04/02 21:36:42 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 79 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+25/04/02 21:36:42 INFO DAGScheduler: ShuffleMapStage 3 (count at NativeMethodAccessorImpl.java:0) finished in 0.096 s
+25/04/02 21:36:42 INFO DAGScheduler: looking for newly runnable stages
+25/04/02 21:36:42 INFO DAGScheduler: running: Set()
+25/04/02 21:36:42 INFO DAGScheduler: waiting: Set()
+25/04/02 21:36:42 INFO DAGScheduler: failed: Set()
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 12.377375 ms
+25/04/02 21:36:42 INFO SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:42 INFO DAGScheduler: Got job 4 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/04/02 21:36:42 INFO DAGScheduler: Final stage: ResultStage 5 (count at NativeMethodAccessorImpl.java:0)
+25/04/02 21:36:42 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+25/04/02 21:36:42 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:42 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[23] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 12.5 KiB, free 434.1 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 5.9 KiB, free 434.1 MiB)
+25/04/02 21:36:42 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 5.9 KiB, free: 434.4 MiB)
+25/04/02 21:36:42 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[23] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks resource profile 0
+25/04/02 21:36:42 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 4) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, NODE_LOCAL, 8999 bytes) 
+25/04/02 21:36:42 INFO Executor: Running task 0.0 in stage 5.0 (TID 4)
+25/04/02 21:36:42 INFO ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/04/02 21:36:42 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 6 ms
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 7.26296 ms
+25/04/02 21:36:42 INFO Executor: Finished task 0.0 in stage 5.0 (TID 4). 3995 bytes result sent to driver
+25/04/02 21:36:42 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 4) in 43 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+25/04/02 21:36:42 INFO DAGScheduler: ResultStage 5 (count at NativeMethodAccessorImpl.java:0) finished in 0.050 s
+25/04/02 21:36:42 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+25/04/02 21:36:42 INFO DAGScheduler: Job 4 finished: count at NativeMethodAccessorImpl.java:0, took 0.057729 s
+25/04/02 21:36:42 INFO FileSourceStrategy: Pushed Filters: IsNotNull(Age),GreaterThan(Age,24.0)
+25/04/02 21:36:42 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(Age#22),(Age#22 > 24.0)
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 8.478664 ms
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 8.052113 ms
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 199.5 KiB, free 433.9 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 433.9 MiB)
+25/04/02 21:36:42 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 34.4 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO SparkContext: Created broadcast 9 from showString at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:42 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+25/04/02 21:36:42 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:42 INFO DAGScheduler: Got job 5 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/04/02 21:36:42 INFO DAGScheduler: Final stage: ResultStage 6 (showString at NativeMethodAccessorImpl.java:0)
+25/04/02 21:36:42 INFO DAGScheduler: Parents of final stage: List()
+25/04/02 21:36:42 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:42 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[28] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 18.9 KiB, free 433.9 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 9.0 KiB, free 433.9 MiB)
+25/04/02 21:36:42 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 9.0 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO BlockManagerInfo: Removed broadcast_8_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 5.9 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[28] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks resource profile 0
+25/04/02 21:36:42 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 5) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, PROCESS_LOCAL, 9620 bytes) 
+25/04/02 21:36:42 INFO Executor: Running task 0.0 in stage 6.0 (TID 5)
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 4.580513 ms
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 12.860807 ms
+25/04/02 21:36:42 INFO FileScanRDD: Reading File path: file:///home/users/fdollaku/Big_Data_Analytics/titanic.csv, range: 0-60302, partition values: [empty row]
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 5.379065 ms
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 4.941205 ms
+25/04/02 21:36:42 INFO Executor: Finished task 0.0 in stage 6.0 (TID 5). 33564 bytes result sent to driver
+25/04/02 21:36:42 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 5) in 77 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+25/04/02 21:36:42 INFO DAGScheduler: ResultStage 6 (showString at NativeMethodAccessorImpl.java:0) finished in 0.085 s
+25/04/02 21:36:42 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 6: Stage finished
+25/04/02 21:36:42 INFO DAGScheduler: Job 5 finished: showString at NativeMethodAccessorImpl.java:0, took 0.087756 s
+25/04/02 21:36:42 INFO BlockManagerInfo: Removed broadcast_7_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 9.3 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 6.637459 ms
+25/04/02 21:36:42 INFO BlockManagerInfo: Removed broadcast_6_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 34.4 KiB, free: 434.4 MiB)
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 5.621176 ms
+25/04/02 21:36:42 INFO FileSourceStrategy: Pushed Filters: IsNotNull(Survived),EqualTo(Survived,1)
+25/04/02 21:36:42 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(Survived#18),(Survived#18 = 1)
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 33.836117 ms
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 199.5 KiB, free 433.9 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 433.9 MiB)
+25/04/02 21:36:42 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 34.4 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO SparkContext: Created broadcast 11 from collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46
+25/04/02 21:36:42 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+25/04/02 21:36:42 INFO DAGScheduler: Registering RDD 32 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46) as input to shuffle 1
+25/04/02 21:36:42 INFO DAGScheduler: Got map stage job 6 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46) with 1 output partitions
+25/04/02 21:36:42 INFO DAGScheduler: Final stage: ShuffleMapStage 7 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46)
+25/04/02 21:36:42 INFO DAGScheduler: Parents of final stage: List()
+25/04/02 21:36:42 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:42 INFO DAGScheduler: Submitting ShuffleMapStage 7 (MapPartitionsRDD[32] at collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46), which has no missing parents
+25/04/02 21:36:42 INFO BlockManagerInfo: Removed broadcast_9_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 34.4 KiB, free: 434.4 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 43.9 KiB, free 434.1 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 20.3 KiB, free 434.1 MiB)
+25/04/02 21:36:42 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 20.3 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:42 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 7 (MapPartitionsRDD[32] at collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks resource profile 0
+25/04/02 21:36:42 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 6) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, PROCESS_LOCAL, 9609 bytes) 
+25/04/02 21:36:42 INFO Executor: Running task 0.0 in stage 7.0 (TID 6)
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 25.250762 ms
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 6.147198 ms
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 3.53249 ms
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 4.689764 ms
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 4.017592 ms
+25/04/02 21:36:42 INFO FileScanRDD: Reading File path: file:///home/users/fdollaku/Big_Data_Analytics/titanic.csv, range: 0-60302, partition values: [empty row]
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 4.676854 ms
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 3.43043 ms
+25/04/02 21:36:42 INFO Executor: Finished task 0.0 in stage 7.0 (TID 6). 2798 bytes result sent to driver
+25/04/02 21:36:42 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 6) in 111 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+25/04/02 21:36:42 INFO DAGScheduler: ShuffleMapStage 7 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46) finished in 0.118 s
+25/04/02 21:36:42 INFO DAGScheduler: looking for newly runnable stages
+25/04/02 21:36:42 INFO DAGScheduler: running: Set()
+25/04/02 21:36:42 INFO DAGScheduler: waiting: Set()
+25/04/02 21:36:42 INFO DAGScheduler: failed: Set()
+25/04/02 21:36:42 INFO ShufflePartitionsUtil: For shuffle(1), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+25/04/02 21:36:42 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 11.123652 ms
+25/04/02 21:36:42 INFO SparkContext: Starting job: collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46
+25/04/02 21:36:42 INFO DAGScheduler: Got job 7 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46) with 1 output partitions
+25/04/02 21:36:42 INFO DAGScheduler: Final stage: ResultStage 9 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46)
+25/04/02 21:36:42 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 8)
+25/04/02 21:36:42 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:42 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[35] at collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46), which has no missing parents
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 47.5 KiB, free 434.0 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 22.1 KiB, free 434.0 MiB)
+25/04/02 21:36:42 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 22.1 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:42 INFO BlockManagerInfo: Removed broadcast_12_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 20.3 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (MapPartitionsRDD[35] at collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks resource profile 0
+25/04/02 21:36:42 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 7) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, NODE_LOCAL, 8999 bytes) 
+25/04/02 21:36:42 INFO Executor: Running task 0.0 in stage 9.0 (TID 7)
+25/04/02 21:36:42 INFO ShuffleBlockFetcherIterator: Getting 1 (72.0 B) non-empty blocks including 1 (72.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/04/02 21:36:42 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 12.029974 ms
+25/04/02 21:36:42 INFO Executor: Finished task 0.0 in stage 9.0 (TID 7). 5218 bytes result sent to driver
+25/04/02 21:36:42 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 7) in 30 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+25/04/02 21:36:42 INFO DAGScheduler: ResultStage 9 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46) finished in 0.038 s
+25/04/02 21:36:42 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 9: Stage finished
+25/04/02 21:36:42 INFO DAGScheduler: Job 7 finished: collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:46, took 0.043899 s
+25/04/02 21:36:42 INFO FileSourceStrategy: Pushed Filters: IsNotNull(Survived),EqualTo(Survived,0)
+25/04/02 21:36:42 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(Survived#18),(Survived#18 = 0)
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 16.932909 ms
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 199.5 KiB, free 433.9 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 433.8 MiB)
+25/04/02 21:36:42 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 34.4 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO SparkContext: Created broadcast 14 from collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47
+25/04/02 21:36:42 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+25/04/02 21:36:42 INFO DAGScheduler: Registering RDD 39 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47) as input to shuffle 2
+25/04/02 21:36:42 INFO DAGScheduler: Got map stage job 8 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47) with 1 output partitions
+25/04/02 21:36:42 INFO DAGScheduler: Final stage: ShuffleMapStage 10 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47)
+25/04/02 21:36:42 INFO DAGScheduler: Parents of final stage: List()
+25/04/02 21:36:42 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:42 INFO DAGScheduler: Submitting ShuffleMapStage 10 (MapPartitionsRDD[39] at collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47), which has no missing parents
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 45.0 KiB, free 433.8 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 20.7 KiB, free 433.8 MiB)
+25/04/02 21:36:42 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 20.7 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:42 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[39] at collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Adding task set 10.0 with 1 tasks resource profile 0
+25/04/02 21:36:42 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 8) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, PROCESS_LOCAL, 9609 bytes) 
+25/04/02 21:36:42 INFO Executor: Running task 0.0 in stage 10.0 (TID 8)
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 16.441327 ms
+25/04/02 21:36:42 INFO FileScanRDD: Reading File path: file:///home/users/fdollaku/Big_Data_Analytics/titanic.csv, range: 0-60302, partition values: [empty row]
+25/04/02 21:36:42 INFO CodeGenerator: Code generated in 3.127589 ms
+25/04/02 21:36:42 INFO Executor: Finished task 0.0 in stage 10.0 (TID 8). 2798 bytes result sent to driver
+25/04/02 21:36:42 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 8) in 50 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+25/04/02 21:36:42 INFO DAGScheduler: ShuffleMapStage 10 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47) finished in 0.055 s
+25/04/02 21:36:42 INFO DAGScheduler: looking for newly runnable stages
+25/04/02 21:36:42 INFO DAGScheduler: running: Set()
+25/04/02 21:36:42 INFO DAGScheduler: waiting: Set()
+25/04/02 21:36:42 INFO DAGScheduler: failed: Set()
+25/04/02 21:36:42 INFO ShufflePartitionsUtil: For shuffle(2), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+25/04/02 21:36:42 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+25/04/02 21:36:42 INFO SparkContext: Starting job: collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47
+25/04/02 21:36:42 INFO DAGScheduler: Got job 9 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47) with 1 output partitions
+25/04/02 21:36:42 INFO DAGScheduler: Final stage: ResultStage 12 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47)
+25/04/02 21:36:42 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 11)
+25/04/02 21:36:42 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:42 INFO DAGScheduler: Submitting ResultStage 12 (MapPartitionsRDD[42] at collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47), which has no missing parents
+25/04/02 21:36:42 INFO BlockManagerInfo: Removed broadcast_15_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 20.7 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 47.5 KiB, free 433.8 MiB)
+25/04/02 21:36:42 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 22.1 KiB, free 433.8 MiB)
+25/04/02 21:36:42 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 22.1 KiB, free: 434.3 MiB)
+25/04/02 21:36:42 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 12 (MapPartitionsRDD[42] at collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:42 INFO TaskSchedulerImpl: Adding task set 12.0 with 1 tasks resource profile 0
+25/04/02 21:36:42 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 9) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, NODE_LOCAL, 8999 bytes) 
+25/04/02 21:36:42 INFO Executor: Running task 0.0 in stage 12.0 (TID 9)
+25/04/02 21:36:43 INFO ShuffleBlockFetcherIterator: Getting 1 (72.0 B) non-empty blocks including 1 (72.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/04/02 21:36:43 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+25/04/02 21:36:43 INFO Executor: Finished task 0.0 in stage 12.0 (TID 9). 5171 bytes result sent to driver
+25/04/02 21:36:43 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 9) in 14 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:43 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+25/04/02 21:36:43 INFO DAGScheduler: ResultStage 12 (collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47) finished in 0.019 s
+25/04/02 21:36:43 INFO DAGScheduler: Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+25/04/02 21:36:43 INFO TaskSchedulerImpl: Killing all running tasks in stage 12: Stage finished
+25/04/02 21:36:43 INFO DAGScheduler: Job 9 finished: collect at /mnt/aiongpfs/users/fdollaku/Big_Data_Analytics/problem3.py:47, took 0.025189 s
+25/04/02 21:36:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 9.0 KiB, free: 434.3 MiB)
+25/04/02 21:36:43 INFO FileSourceStrategy: Pushed Filters: 
+25/04/02 21:36:43 INFO FileSourceStrategy: Post-Scan Filters: 
+25/04/02 21:36:43 INFO CodeGenerator: Code generated in 16.738118 ms
+25/04/02 21:36:43 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 199.5 KiB, free 433.6 MiB)
+25/04/02 21:36:43 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 433.6 MiB)
+25/04/02 21:36:43 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 34.4 KiB, free: 434.3 MiB)
+25/04/02 21:36:43 INFO SparkContext: Created broadcast 17 from showString at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:43 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+25/04/02 21:36:43 INFO DAGScheduler: Registering RDD 46 (showString at NativeMethodAccessorImpl.java:0) as input to shuffle 3
+25/04/02 21:36:43 INFO DAGScheduler: Got map stage job 10 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/04/02 21:36:43 INFO DAGScheduler: Final stage: ShuffleMapStage 13 (showString at NativeMethodAccessorImpl.java:0)
+25/04/02 21:36:43 INFO DAGScheduler: Parents of final stage: List()
+25/04/02 21:36:43 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:43 INFO DAGScheduler: Submitting ShuffleMapStage 13 (MapPartitionsRDD[46] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/04/02 21:36:43 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 43.7 KiB, free 433.5 MiB)
+25/04/02 21:36:43 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 20.2 KiB, free 433.5 MiB)
+25/04/02 21:36:43 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 20.2 KiB, free: 434.2 MiB)
+25/04/02 21:36:43 INFO SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:43 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 13 (MapPartitionsRDD[46] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:43 INFO TaskSchedulerImpl: Adding task set 13.0 with 1 tasks resource profile 0
+25/04/02 21:36:43 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 10) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, PROCESS_LOCAL, 9609 bytes) 
+25/04/02 21:36:43 INFO Executor: Running task 0.0 in stage 13.0 (TID 10)
+25/04/02 21:36:43 INFO CodeGenerator: Code generated in 16.588387 ms
+25/04/02 21:36:43 INFO FileScanRDD: Reading File path: file:///home/users/fdollaku/Big_Data_Analytics/titanic.csv, range: 0-60302, partition values: [empty row]
+25/04/02 21:36:43 INFO Executor: Finished task 0.0 in stage 13.0 (TID 10). 2742 bytes result sent to driver
+25/04/02 21:36:43 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 10) in 46 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:43 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+25/04/02 21:36:43 INFO DAGScheduler: ShuffleMapStage 13 (showString at NativeMethodAccessorImpl.java:0) finished in 0.050 s
+25/04/02 21:36:43 INFO DAGScheduler: looking for newly runnable stages
+25/04/02 21:36:43 INFO DAGScheduler: running: Set()
+25/04/02 21:36:43 INFO DAGScheduler: waiting: Set()
+25/04/02 21:36:43 INFO DAGScheduler: failed: Set()
+25/04/02 21:36:43 INFO ShufflePartitionsUtil: For shuffle(3), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+25/04/02 21:36:43 INFO CodeGenerator: Code generated in 3.468859 ms
+25/04/02 21:36:43 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+25/04/02 21:36:43 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+25/04/02 21:36:43 INFO DAGScheduler: Got job 11 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/04/02 21:36:43 INFO DAGScheduler: Final stage: ResultStage 15 (showString at NativeMethodAccessorImpl.java:0)
+25/04/02 21:36:43 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 14)
+25/04/02 21:36:43 INFO DAGScheduler: Missing parents: List()
+25/04/02 21:36:43 INFO DAGScheduler: Submitting ResultStage 15 (MapPartitionsRDD[50] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/04/02 21:36:43 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 47.6 KiB, free 433.5 MiB)
+25/04/02 21:36:43 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 22.1 KiB, free 433.4 MiB)
+25/04/02 21:36:43 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on aion-177.aion-cluster.uni.lux:45421 (size: 22.1 KiB, free: 434.2 MiB)
+25/04/02 21:36:43 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1585
+25/04/02 21:36:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 15 (MapPartitionsRDD[50] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/04/02 21:36:43 INFO TaskSchedulerImpl: Adding task set 15.0 with 1 tasks resource profile 0
+25/04/02 21:36:43 INFO TaskSetManager: Starting task 0.0 in stage 15.0 (TID 11) (aion-177.aion-cluster.uni.lux, executor driver, partition 0, NODE_LOCAL, 8999 bytes) 
+25/04/02 21:36:43 INFO Executor: Running task 0.0 in stage 15.0 (TID 11)
+25/04/02 21:36:43 INFO CodeGenerator: Code generated in 3.34963 ms
+25/04/02 21:36:43 INFO ShuffleBlockFetcherIterator: Getting 1 (144.0 B) non-empty blocks including 1 (144.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/04/02 21:36:43 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+25/04/02 21:36:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 20.2 KiB, free: 434.2 MiB)
+25/04/02 21:36:43 INFO Executor: Finished task 0.0 in stage 15.0 (TID 11). 5194 bytes result sent to driver
+25/04/02 21:36:43 INFO TaskSetManager: Finished task 0.0 in stage 15.0 (TID 11) in 18 ms on aion-177.aion-cluster.uni.lux (executor driver) (1/1)
+25/04/02 21:36:43 INFO TaskSchedulerImpl: Removed TaskSet 15.0, whose tasks have all completed, from pool 
+25/04/02 21:36:43 INFO DAGScheduler: ResultStage 15 (showString at NativeMethodAccessorImpl.java:0) finished in 0.023 s
+25/04/02 21:36:43 INFO DAGScheduler: Job 11 is finished. Cancelling potential speculative or zombie tasks for this job
+25/04/02 21:36:43 INFO TaskSchedulerImpl: Killing all running tasks in stage 15: Stage finished
+25/04/02 21:36:43 INFO DAGScheduler: Job 11 finished: showString at NativeMethodAccessorImpl.java:0, took 0.027065 s
+25/04/02 21:36:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on aion-177.aion-cluster.uni.lux:45421 in memory (size: 22.1 KiB, free: 434.3 MiB)
+25/04/02 21:36:43 INFO CodeGenerator: Code generated in 4.561533 ms
+25/04/02 21:36:43 INFO SparkContext: SparkContext is stopping with exitCode 0.
+25/04/02 21:36:43 INFO SparkUI: Stopped Spark web UI at http://aion-177.aion-cluster.uni.lux:4040
+25/04/02 21:36:43 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+25/04/02 21:36:43 INFO MemoryStore: MemoryStore cleared
+25/04/02 21:36:43 INFO BlockManager: BlockManager stopped
+25/04/02 21:36:43 INFO BlockManagerMaster: BlockManagerMaster stopped
+25/04/02 21:36:43 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+25/04/02 21:36:43 INFO SparkContext: Successfully stopped SparkContext
+25/04/02 21:36:43 INFO ShutdownHookManager: Shutdown hook called
+25/04/02 21:36:43 INFO ShutdownHookManager: Deleting directory /tmp/spark-a61c38bc-8297-420a-a81c-247625d17204
+25/04/02 21:36:43 INFO ShutdownHookManager: Deleting directory /tmp/spark-235cc8ba-d602-419f-9e6f-2dd751cacbd9
+25/04/02 21:36:43 INFO ShutdownHookManager: Deleting directory /tmp/spark-a61c38bc-8297-420a-a81c-247625d17204/pyspark-eb0ea18e-a85d-4fa8-908e-3154bcc4e798
